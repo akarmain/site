@@ -1,0 +1,7 @@
+{
+  "name": "TMA_ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
