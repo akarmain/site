@@ -67,7 +67,7 @@ export default {
 .typewriter-text {
   font-family: 'Courier New', Courier, monospace;
   white-space: pre;
-  margin-top: 16px;
+  margin-top: 26px;
   text-align: start;
   width: 400px;
   min-height: 30px;

@@ -8,7 +8,9 @@
         <TypewriterText :words="['Рython developer', 'Fullstack developer', 'Telegram bot & mini app dev']"
                         :speed="150" :pause="2000"/>
         <AboutMeCode></AboutMeCode>
+        <AboutMeLinks></AboutMeLinks>
       </div>
+
       <div class="index_bg">
         <img src="../media/bg/desktop.png" alt="Фоновое изображение" class="background-image">
       </div>
@@ -28,6 +30,7 @@
           <TypewriterText :words="['Рython developer', 'Fullstack developer', 'Telegram bot & mini app dev']"
                           :speed="150" :pause="2000" class="typewriter-text"/>
           <AboutMeCode></AboutMeCode>
+          <AboutMeLinks></AboutMeLinks>
         </div>
       </ion-content>
     </div>
@@ -37,18 +40,17 @@
 <script setup lang="ts">
 import TypewriterText from '../components/utils/TypewriterText.vue';
 import AboutMeCode from '../components/utils/AboutMeCode.vue';
+import AboutMeLinks from "../components/utils/AboutMeLinks.vue";
 
 import {
   IonContent,
   IonPage,
 } from '@ionic/vue';
-
 </script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/* Общие стили */
 .info {
   display: flex;
   flex-wrap: wrap;
@@ -56,6 +58,9 @@ import {
   margin: 0;
 }
 
+.links {
+  margin-top: 0px;
+}
 
 h1 {
   font-family: 'Ubuntu', sans-serif;

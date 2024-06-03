@@ -10,20 +10,21 @@
         <ion-title>{{ projectName }}</ion-title>
       </ion-toolbar>
     </ion-header>
-
-
     <ion-content>
-      <div class="content" v-if="isQRBot">
-        QR - bot
-      </div>
-      <div class="content" v-if="isGPTgft">
-        GPT - gft
-      </div>
-      <div class="content" v-if="isNone">
+      <div class="content">
+        <div v-if="isQRBot">
+          <q-r_bot></q-r_bot>
+        </div>
+        <div class="content" v-if="isGPTgft">
+          GPT - gft
+        </div>
+        <div class="content" v-if="isNone">
         <span style="margin-top: 100px; font-size: 30px; font-weight: bold;">
           I think I'll start developing "{{ projectName }}"
         </span>
+        </div>
       </div>
+
     </ion-content>
   </ion-page>
 </template>
@@ -31,11 +32,35 @@
 <script lang="ts">
 import {defineComponent, ref, onMounted} from 'vue';
 import {useRoute, useRouter} from 'vue-router';
-import {IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonBackButton} from '@ionic/vue';
+import {
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  IonContent,
+  IonPage,
+  IonBackButton,
+  IonIcon,
+  IonChip,
+  IonLabel
+} from '@ionic/vue';
+import {IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle} from '@ionic/vue';
+import QR_bot from "@/components/projects/QR_bot.vue";
 
 export default defineComponent({
   components: {
-    IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonBackButton
+    QR_bot,
+    IonLabel, IonChip, IonIcon,
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonContent,
+    IonPage,
+    IonBackButton,
+    IonCard,
+    IonCardContent,
+    IonCardHeader,
+    IonCardSubtitle,
+    IonCardTitle
   },
   setup() {
     const router = useRouter();
@@ -81,6 +106,12 @@ export default defineComponent({
   justify-content: center;
   flex-direction: column;
   padding: 16px;
+  max-width: 750px;
+  margin: auto;
 }
+
+ion-card {
+}
+
 
 </style>
