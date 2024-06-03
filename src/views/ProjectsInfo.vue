@@ -13,10 +13,10 @@
     <ion-content>
       <div class="content">
         <div v-if="isQRBot">
-          <q-r_bot></q-r_bot>
+          <QR_bot></QR_bot>
         </div>
         <div class="content" v-if="isGPTgft">
-          GPT - gft
+          <GPT_gft></GPT_gft>
         </div>
         <div class="content" v-if="isNone">
         <span style="margin-top: 100px; font-size: 30px; font-weight: bold;">
@@ -45,9 +45,11 @@ import {
 } from '@ionic/vue';
 import {IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle} from '@ionic/vue';
 import QR_bot from "@/components/projects/QR_bot.vue";
+import GPT_gft from "@/components/projects/GPT_gft.vue";
 
 export default defineComponent({
   components: {
+    GPT_gft,
     QR_bot,
     IonLabel, IonChip, IonIcon,
     IonHeader,
@@ -105,12 +107,9 @@ export default defineComponent({
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 16px;
+  padding: 4px;
   max-width: 750px;
   margin: auto;
-}
-
-ion-card {
 }
 
 
