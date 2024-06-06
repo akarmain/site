@@ -18,13 +18,15 @@
         <div class="content" v-if="isGPTgft">
           <GPT_gft></GPT_gft>
         </div>
+        <div class="content" v-if="isEduHelperAI">
+          <Edu_Helper_AI></Edu_Helper_AI>
+        </div>
         <div class="content" v-if="isNone">
         <span style="margin-top: 100px; font-size: 30px; font-weight: bold;">
           I think I'll start developing "{{ projectName }}"
         </span>
         </div>
       </div>
-
     </ion-content>
   </ion-page>
 </template>
@@ -46,9 +48,11 @@ import {
 import {IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle} from '@ionic/vue';
 import QR_bot from "@/components/projects/QR_bot.vue";
 import GPT_gft from "@/components/projects/GPT_gft.vue";
+import Edu_Helper_AI from "@/components/projects/Edu_Helper_AI.vue";
 
 export default defineComponent({
   components: {
+    Edu_Helper_AI,
     GPT_gft,
     QR_bot,
     IonLabel, IonChip, IonIcon,
@@ -71,6 +75,7 @@ export default defineComponent({
     const projectName = ref<string>(route.params.projectName as string);
     const isQRBot = ref<boolean>(false);
     const isGPTgft = ref<boolean>(false);
+    const isEduHelperAI = ref<boolean>(false);
     const isNone = ref<boolean>(true);
 
     onMounted(() => {
@@ -81,6 +86,10 @@ export default defineComponent({
           break;
         case "GPT gift":
           isGPTgft.value = true;
+          isNone.value = false;
+          break;
+        case "Edu Helper AI":
+          isEduHelperAI.value = true;
           isNone.value = false;
           break;
       }
@@ -95,6 +104,7 @@ export default defineComponent({
       isQRBot,
       isGPTgft,
       isNone,
+      isEduHelperAI,
       goBack
     };
   },

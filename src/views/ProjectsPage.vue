@@ -19,6 +19,12 @@
             icon_path="https://akarmain.ru/saved/icons/gpt_gift.svg"
             :urls="gpt_gift_urls"
         />
+        <CardComponent
+            title="Edu Helper AI"
+            description="Бот для помощи в учебе, умеет отвечать на вопросы по коду, создавать конспекты и объяснять темы, понимая контекст диалога. Создает задачи с параметрами и тегами. + есть инструкция в формате web app"
+            icon_path="https://akarmain.ru/saved/icons/edu_helper_ai.svg"
+            :urls="edu_helper_ai_urls"
+        />
       </div>
     </ion-content>
   </ion-page>
@@ -38,6 +44,9 @@ export default {
       },
       gpt_gift_urls: {
         "/web_site": "https://gpt-gift.akarmain.ru/"
+      },
+      edu_helper_ai_urls: {
+        "/start": "https://t.me/hahaton_mshp_bot"
       }
     };
   }
