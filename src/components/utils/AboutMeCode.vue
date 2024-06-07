@@ -3,9 +3,10 @@
           <pre><span class="code_orange">{</span>
   <span class="code_orange">"Возраст"</span>: <span class="code_blue">16</span>,
   <span class="code_orange">"Дата рождения"</span>: <span class="code_green">"10.11.2007"</span>,
+  <span class="code_orange">"Code"</span>: [<span class="code_green">"Python"</span>, <span
+                class="code_green">"JavaScript"</span>],
   <span class="code_orange">"Языки"</span>: [<span class="code_green">"RU"</span>, <span
-                class="code_green">"EN"</span>, <span
-                class="code_green">"py"</span>, <span class="code_green">"js"</span>],
+                class="code_green">"EN"</span>],
   <span class="code_orange">"Хобби"</span>: [<span class="code_green">"Монтаж видео"</span>, <span
                 class="code_green">"Спорт"</span>],
   <span class="code_orange">"Опыт работы"</span>: <span class="code_purple">null</span>,

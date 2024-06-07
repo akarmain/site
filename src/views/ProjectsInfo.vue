@@ -24,6 +24,9 @@
         <div class="content" v-if="isSite">
           <Site></Site>
         </div>
+        <div class="content" v-if="isMini">
+          <Mini></Mini>
+        </div>
         <div class="content" v-if="isNone">
         <span style="margin-top: 100px; font-size: 30px; font-weight: bold;">
           I think I'll start developing "{{ projectName }}"
@@ -53,9 +56,11 @@ import QR_bot from "@/components/projects/QR_bot.vue";
 import GPT_gft from "@/components/projects/GPT_gft.vue";
 import Edu_Helper_AI from "@/components/projects/Edu_Helper_AI.vue";
 import Site from "@/components/projects/Site.vue";
+import Mini from "@/components/projects/Mini.vue";
 
 export default defineComponent({
   components: {
+    Mini,
     Site,
     Edu_Helper_AI,
     GPT_gft,
@@ -82,26 +87,29 @@ export default defineComponent({
     const isGPTgft = ref<boolean>(false);
     const isSite = ref<boolean>(false);
     const isEduHelperAI = ref<boolean>(false);
-    const isNone = ref<boolean>(true);
+    const isMini = ref<boolean>(false);
+    const isNone = ref<boolean>(false);
 
     onMounted(() => {
       switch (projectName.value) {
         case "QR bot":
           isQRBot.value = true;
-          isNone.value = false;
           break;
         case "GPT gift":
           isGPTgft.value = true;
-          isNone.value = false;
           break;
         case "Edu Helper AI":
           isEduHelperAI.value = true;
-          isNone.value = false;
           break;
         case "Site":
           isSite.value = true;
-          isNone.value = false;
           break;
+        case "Mini":
+          isMini.value = true;
+          break;
+        default:
+          isNone.value = true;
+
       }
     });
 
@@ -115,7 +123,7 @@ export default defineComponent({
       isGPTgft,
       isEduHelperAI,
       isSite,
-
+      isMini,
 
       isNone,
       goBack

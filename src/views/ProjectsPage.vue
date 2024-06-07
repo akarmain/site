@@ -30,6 +30,11 @@
             description="Сайт-визитка для разработчика, выполненный в стиле мобильного приложения"
             icon_path="https://akarmain.ru/saved/icons/site.svg"
         />
+        <CardComponent
+            title="Mini"
+            description="Это небольшие проекты которые я писал или давно или для изучения узких тем"
+            icon_path="https://akarmain.ru/saved/icons/mini.svg"
+        />
       </div>
     </ion-content>
   </ion-page>

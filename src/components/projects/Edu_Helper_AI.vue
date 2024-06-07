@@ -28,8 +28,8 @@
       <hr>
       <br>
       Этот проект был разработан в рамках "<a href="https://hackathon.informatics.ru/" target="_blank">Хакатона</a> по
-      IT-технологиям от МШП в 2024 году". (<a href="../../media/download/hackathon_info_2024.pdf"
-                                              download="hackathon_info_2024.pdf">pdf сайта</a>)<br>Моя роль заключалась
+      IT-технологиям от МШП в 2024 году". (<a :href="hackathon_info_2024_pdf" download="hackathon_info_2024.pdf" content="pdf">pdf сайта</a>)<br>Моя роль
+      заключалась
       в
       написании кода для бота, с чем я успешно справился за 8 часов. Все, кроме инструкции в формате TMA, было выполнено
       мной.<br>
@@ -56,11 +56,8 @@
       <h2>Инструкция в формате TMA написана на React с использованием <a href="https://docs.telegram-mini-apps.com/"
                                                                          target="_blank">@tma.js SDK</a></h2>
       <hr>
-
       <p style="font-style: italic">PS: Этот проект оказался лучшим и мы получили
-
-        <a href="../../media/download/diploma_Karmaev_compressed.pdf"
-           download="diploma_Karmaev.pdf" content="pdf">дипломы</a> и подарочные сертификаты :)</p>
+        <a :href="diploma_pdf" download="diploma_Karmaev.pdf" content="pdf">дипломы</a> и подарочные сертификаты :)</p>
     </ion-card-content>
   </ion-card>
 </template>
@@ -76,17 +73,12 @@ import {
   IonIcon,
   IonLabel
 } from "@ionic/vue";
-import {globe, logoGithub, logoInstagram, logoTiktok, logoYoutube} from "ionicons/icons";
-import botstatIcon from "@/media/icons/bot-add-svgrepo-com.svg";
+import {logoGithub} from "ionicons/icons";
 import telegramIcon from "@/media/icons/telegram.svg";
+import diploma_pdf from '../../media/download/diploma_Karmaev_compressed.pdf'
+import hackathon_info_2024_pdf from "../../media/download/hackathon_info_2024.pdf"
 
-const logoTiktokIcon = logoTiktok;
-const logoInstagramIcon = logoInstagram;
 const logoGithubIcon = logoGithub;
-const logoYoutubeIcon = logoYoutube;
-const globeIcon = globe;
-const logoBotstatIcon = botstatIcon;
-
 </script>
 
 <style scoped>
@@ -95,9 +87,6 @@ const logoBotstatIcon = botstatIcon;
   font-size: 15px;
 }
 
-.youtube-promo {
-  margin-top: 8px;
-}
 
 hr {
   background-color: var(--ion-color-light-contrast);
@@ -105,8 +94,6 @@ hr {
 
 ul {
   padding-left: 20px;
-  margin-top: 0px;
-  padding-top: 0px;
 }
 
 a {
