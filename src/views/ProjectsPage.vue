@@ -25,6 +25,11 @@
             icon_path="https://akarmain.ru/saved/icons/edu_helper_ai.svg"
             :urls="edu_helper_ai_urls"
         />
+        <CardComponent
+            title="Site"
+            description="Сайт-визитка для разработчика, выполненный в стиле мобильного приложения"
+            icon_path="https://akarmain.ru/saved/icons/site.svg"
+        />
       </div>
     </ion-content>
   </ion-page>

@@ -21,6 +21,9 @@
         <div class="content" v-if="isEduHelperAI">
           <Edu_Helper_AI></Edu_Helper_AI>
         </div>
+        <div class="content" v-if="isSite">
+          <Site></Site>
+        </div>
         <div class="content" v-if="isNone">
         <span style="margin-top: 100px; font-size: 30px; font-weight: bold;">
           I think I'll start developing "{{ projectName }}"
@@ -49,9 +52,11 @@ import {IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle} f
 import QR_bot from "@/components/projects/QR_bot.vue";
 import GPT_gft from "@/components/projects/GPT_gft.vue";
 import Edu_Helper_AI from "@/components/projects/Edu_Helper_AI.vue";
+import Site from "@/components/projects/Site.vue";
 
 export default defineComponent({
   components: {
+    Site,
     Edu_Helper_AI,
     GPT_gft,
     QR_bot,
@@ -75,6 +80,7 @@ export default defineComponent({
     const projectName = ref<string>(route.params.projectName as string);
     const isQRBot = ref<boolean>(false);
     const isGPTgft = ref<boolean>(false);
+    const isSite = ref<boolean>(false);
     const isEduHelperAI = ref<boolean>(false);
     const isNone = ref<boolean>(true);
 
@@ -92,6 +98,10 @@ export default defineComponent({
           isEduHelperAI.value = true;
           isNone.value = false;
           break;
+        case "Site":
+          isSite.value = true;
+          isNone.value = false;
+          break;
       }
     });
 
@@ -103,8 +113,11 @@ export default defineComponent({
       projectName,
       isQRBot,
       isGPTgft,
-      isNone,
       isEduHelperAI,
+      isSite,
+
+
+      isNone,
       goBack
     };
   },
