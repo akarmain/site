@@ -58,10 +58,6 @@ import {
   margin: 0;
 }
 
-.links {
-  margin-top: 0px;
-}
-
 h1 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 42px;

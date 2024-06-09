@@ -64,16 +64,5 @@ export default {
 </script>
 
 <style scoped>
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 16px;
-}
-
-ion-content {
-  --padding-start: 16px;
-  --padding-end: 16px;
-}
+@import "@/theme/basic_card.css";
 </style>

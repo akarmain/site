@@ -12,7 +12,7 @@
           </ion-chip>
         </a>
       </ion-card-subtitle>
-      <img src="@/media/bg/look_like.png">
+      <img alt="look_like" src="@/media/bg/look_like.png">
     </ion-card-header>
     <ion-card-content class="description">
       Это сайт-визитка, созданная для демонстрации моих умений и проектов. Написана на Vue и Ionic, чтобы лучше изучить
@@ -43,50 +43,11 @@ import {
   IonIcon,
   IonLabel
 } from "@ionic/vue";
-import {globe, logoGithub, logoInstagram, logoTiktok, logoYoutube} from "ionicons/icons";
-import botstatIcon from "@/media/icons/bot-add-svgrepo-com.svg";
-import telegramIcon from "@/media/icons/telegram.svg";
-
-const logoTiktokIcon = logoTiktok;
-const logoInstagramIcon = logoInstagram;
+import {logoGithub} from "ionicons/icons";
 const logoGithubIcon = logoGithub;
-const logoYoutubeIcon = logoYoutube;
-const globeIcon = globe;
-const logoBotstatIcon = botstatIcon;
 
 </script>
 
 <style scoped>
-.description {
-  color: var(--ion-color-light-contrast);
-  font-size: 15px;
-}
-
-.youtube-promo {
-  margin-top: 8px;
-}
-
-hr {
-  background-color: var(--ion-color-light-contrast);
-}
-
-ul {
-  padding-left: 20px;
-  margin-top: 0px;
-  padding-top: 0px;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  margin: auto;
-}
-
-
-ion-card {
-  padding: 2px;
-}
-
+@import "@/theme/basic_in_card.css";
 </style>

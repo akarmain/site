@@ -53,7 +53,6 @@
            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
         <iframe
             src="https://www.youtube.com/embed/A-P5qvctews"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
@@ -68,7 +67,8 @@
       маркетологам, дизайнерам, типографам и всем, кто нуждается в быстром создании QR-кодов без лишних хлопот.
       <br>
       <br>
-      Все, что связано с ботом, было придумано и разработано исключительно мной, на что у меня имеется <a href="https://fips.ru/EGD/071d29ae-f144-4d56-b3d2-edcd5fb38d70" target="_blank">патент</a>.
+      Все, что связано с ботом, было придумано и разработано исключительно мной, на что у меня имеется <a
+        href="https://fips.ru/EGD/071d29ae-f144-4d56-b3d2-edcd5fb38d70" target="_blank">патент</a>.
       <hr>
       <br>
       <br>
@@ -156,25 +156,6 @@ const logoBotstatIcon = botstatIcon;
 </script>
 
 <style scoped>
-.description {
-  color: var(--ion-color-light-contrast);
-  font-size: 15px;
-}
-
-.youtube-promo {
-  margin-top: 8px;
-}
-
-ul {
-  padding-left: 20px;
-  margin-top: 0px;
-  padding-top: 0px;
-}
-
-a {
-  text-decoration: none;
-}
-hr {
-  background-color: var(--ion-color-light-contrast);
-}
+@import "@/theme/basic_in_card.css";
 </style>
+

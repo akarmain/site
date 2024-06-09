@@ -1,0 +1,32 @@
+.description {
+    color: var(--ion-color-light-contrast);
+    font-size: 15px;
+}
+
+.youtube-promo {
+    margin-top: 8px;
+}
+
+hr {
+    background-color: var(--ion-color-light-contrast);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    margin: auto;
+}
+
+ion-card {
+    padding: 2px;
+}
+
+iframe{
+    border: none;
+}

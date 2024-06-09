@@ -28,7 +28,8 @@
       <hr>
       <br>
       Этот проект был разработан в рамках "<a href="https://hackathon.informatics.ru/" target="_blank">Хакатона</a> по
-      IT-технологиям от МШП в 2024 году". (<a :href="hackathon_info_2024_pdf" download="hackathon_info_2024.pdf" content="pdf">pdf сайта</a>)<br>Моя роль
+      IT-технологиям от МШП в 2024 году". (<a :href="hackathon_info_2024_pdf" download="hackathon_info_2024.pdf"
+                                              content="pdf">pdf сайта</a>)<br>Моя роль
       заключалась
       в
       написании кода для бота, с чем я успешно справился за 8 часов. Все, кроме инструкции в формате TMA, было выполнено
@@ -75,38 +76,12 @@ import {
 } from "@ionic/vue";
 import {logoGithub} from "ionicons/icons";
 import telegramIcon from "@/media/icons/telegram.svg";
-import diploma_pdf from '../../media/download/diploma_Karmaev_compressed.pdf'
-import hackathon_info_2024_pdf from "../../media/download/hackathon_info_2024.pdf"
+import diploma_pdf from '@/media/download/diploma_Karmaev_compressed.pdf'
+import hackathon_info_2024_pdf from "@/media/download/hackathon_info_2024.pdf"
 
 const logoGithubIcon = logoGithub;
 </script>
 
 <style scoped>
-.description {
-  color: var(--ion-color-light-contrast);
-  font-size: 15px;
-}
-
-
-hr {
-  background-color: var(--ion-color-light-contrast);
-}
-
-ul {
-  padding-left: 20px;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  margin: auto;
-}
-
-
-ion-card {
-  padding: 2px;
-}
-
+@import "@/theme/basic_in_card.css";
 </style>

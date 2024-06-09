@@ -28,7 +28,6 @@
            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
         <iframe
             src="https://www.youtube.com/embed/6H1cFuo0klc"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
@@ -93,49 +92,13 @@ import {
   IonIcon,
   IonLabel
 } from "@ionic/vue";
-import {globe, logoGithub, logoInstagram, logoTiktok, logoYoutube} from "ionicons/icons";
-import botstatIcon from "@/media/icons/bot-add-svgrepo-com.svg";
+import {globe, logoGithub} from "ionicons/icons";
 import telegramIcon from "@/media/icons/telegram.svg";
 
-const logoTiktokIcon = logoTiktok;
-const logoInstagramIcon = logoInstagram;
 const logoGithubIcon = logoGithub;
-const logoYoutubeIcon = logoYoutube;
 const globeIcon = globe;
-const logoBotstatIcon = botstatIcon;
 </script>
 
 <style scoped>
-.description {
-  color: var(--ion-color-light-contrast);
-  font-size: 15px;
-}
-
-.youtube-promo {
-  margin-top: 8px;
-}
-
-hr {
-  background-color: var(--ion-color-light-contrast);
-}
-
-ul {
-  padding-left: 20px;
-  margin-top: 0px;
-  padding-top: 0px;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  margin: auto;
-}
-
-
-ion-card {
-  padding: 2px;
-}
-
+@import "@/theme/basic_in_card.css";
 </style>

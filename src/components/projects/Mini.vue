@@ -44,7 +44,8 @@
     <ion-card-content class="description">
       Сайт для решения задач по информатике.<br>
       Для изучения JavaScript я решил выполнять все задания по информатике на этом языке. А чтобы преподавателю было
-      удобно проверять мои работы, я создал простой интерфейс сайта на <a href="https://nodejs.org" target="_blank">Node.js</a> и <a href="https://ejs.co/" target="_blank">EJS</a>, с которыми уже имел опыт работы
+      удобно проверять мои работы, я создал простой интерфейс сайта на <a href="https://nodejs.org" target="_blank">Node.js</a>
+      и <a href="https://ejs.co/" target="_blank">EJS</a>, с которыми уже имел опыт работы
     </ion-card-content>
   </ion-card>
 </template>
@@ -54,56 +55,18 @@ import {
   IonCard,
   IonCardContent,
   IonCardHeader,
-  IonCardSubtitle,
   IonCardTitle,
   IonChip,
   IonIcon,
   IonLabel
 } from "@ionic/vue";
-import {globe, logoGithub, logoInstagram, logoTiktok, logoYoutube} from "ionicons/icons";
-import botstatIcon from "@/media/icons/bot-add-svgrepo-com.svg";
-import telegramIcon from "@/media/icons/telegram.svg";
+import {globe, logoGithub} from "ionicons/icons";
 
-const logoTiktokIcon = logoTiktok;
-const logoInstagramIcon = logoInstagram;
 const logoGithubIcon = logoGithub;
-const logoYoutubeIcon = logoYoutube;
 const globeIcon = globe;
-const logoBotstatIcon = botstatIcon;
 
 </script>
 
 <style scoped>
-.description {
-  color: var(--ion-color-light-contrast);
-  font-size: 15px;
-}
-
-.youtube-promo {
-  margin-top: 8px;
-}
-
-hr {
-  background-color: var(--ion-color-light-contrast);
-}
-
-ul {
-  padding-left: 20px;
-  margin-top: 0px;
-  padding-top: 0px;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  margin: auto;
-}
-
-
-ion-card {
-  padding: 2px;
-}
-
+@import "@/theme/basic_in_card.css";
 </style>
