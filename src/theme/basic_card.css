@@ -53,13 +53,108 @@ hr {
     font-size: 15px;
 }
 
-.technology{
+.technology {
     display: flex;
     align-items: center;
     margin: 4px;
 }
-ion-avatar{
+
+ion-avatar {
     width: 64px;
     height: 64px;
     margin-right: 10px;
+}
+
+
+ion-accordion-group {
+    margin: 0;
+    font-size: 8px;
+}
+
+.technology {
+    display: flex;
+    align-items: center;
+}
+
+.tech-info {
+    display: flex;
+    margin-left: 10px;
+}
+
+ion-chip {
+    height: 10px;
+}
+
+.technology {
+    display: flex;
+    align-items: center;
+}
+
+.tech-info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+a {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.chip-link {
+    display: inline-block;
+    padding: 2px 6px;
+    margin: 2px;
+    border: 1px solid var(--ion-color-medium);
+    border-radius: 8px;
+    background-color: var(--ion-color-light);
+    color: var(--ion-color-medium);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.chip-link:hover {
+    background-color: var(--ion-color-medium);
+    color: var(--ion-color-light);
+}
+
+@media (max-width: 768px) {
+    .technology {
+        align-items: flex-start;
+        margin-bottom: 5px;
+    }
+
+    ion-avatar {
+        width: 45px;
+        height: 45px;
+    }
+
+    .tech-info a {
+        font-size: 18px;
+    }
+
+
+    .chip-link {
+        padding: 2.5px 5px;
+        font-size: 12px;
+    }
+
+    .tech-info {
+        margin-left: 5px;
+    }
+
+    .project-links a {
+        margin-top: 2.5px;
+        font-size: 10px;
+    }
+}
+
+.ion-padding {
+    background-color: var(--ion-color-light);
+}
+
+ion-item {
+    --background: var(--ion-color-light);
 }

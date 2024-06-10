@@ -12,15 +12,14 @@
       </div>
     </ion-card-header>
     <ion-card-content class="description">
-      <ion-note class="description">Мой первый и самый любимый язык программирования. Начал его изучать в 2019 году на
-        специализированных курсах. С тех пор я освоил широкий спектр технологий и успешно применил их в различных
-        проектах.
+      <ion-note class="description">Мой первый и самый любимый язык программирования. Начал изучать его в 2019 году на
+        специальных курсах и за 5 лет вышел на продвинутый уровень.
       </ion-note>
       <hr>
       <ion-accordion-group expand="inset">
         <ion-accordion value="first">
           <ion-item slot="header" color="light">
-            <ion-label>Технологии которые использую в работе</ion-label>
+            <ion-label>Технологии, которые использую в работе</ion-label>
           </ion-item>
           <div class="ion-padding" slot="content">
             <!-- Django -->
@@ -222,97 +221,4 @@ import {
 
 <style scoped>
 @import "@/theme/basic_card.css";
-
-ion-accordion-group {
-  margin: 0;
-  font-size: 8px;
-}
-
-.technology {
-  display: flex;
-  align-items: center;
-}
-
-.tech-info {
-  display: flex;
-  margin-left: 10px;
-}
-
-ion-chip {
-  height: 10px;
-}
-
-.technology {
-  display: flex;
-  align-items: center;
-}
-
-.tech-info {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-}
-
-a {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-
-.chip-link {
-  display: inline-block;
-  padding: 2px 6px;
-  margin: 2px;
-  border: 1px solid var(--ion-color-medium);
-  border-radius: 8px;
-  background-color: var(--ion-color-light);
-  color: var(--ion-color-medium);
-  font-size: 12px;
-  text-decoration: none;
-}
-
-.chip-link:hover {
-  background-color: var(--ion-color-medium);
-  color: var(--ion-color-light);
-}
-
-@media (max-width: 768px) {
-  .technology {
-    align-items: flex-start;
-    margin-bottom: 5px;
-  }
-
-  ion-avatar {
-    width: 45px;
-    height: 45px;
-  }
-
-  .tech-info a {
-    font-size: 18px;
-  }
-
-
-  .chip-link {
-    padding: 2.5px 5px;
-    font-size: 12px;
-  }
-
-  .tech-info {
-    margin-left: 5px;
-  }
-
-  .project-links a {
-    margin-top: 2.5px;
-    font-size: 10px;
-  }
-}
-
-.ion-padding {
-  background-color: var(--ion-color-light);
-}
-
-ion-item {
-  --background: var(--ion-color-light);
-}
 </style>
