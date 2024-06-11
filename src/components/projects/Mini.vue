@@ -3,7 +3,7 @@
     <ion-card-header>
       <ion-card-title>
         Selenium eduApp парсер
-        <a href="https://github.com/akarmain/site" target="_blank">
+        <a href="https://github.com/akarmain/Save_Informatics-EduApp_Code" target="_blank">
           <ion-chip class="links">
             <ion-icon :src="logoGithubIcon" color="dark"></ion-icon>
             <ion-label>GitHub</ion-label>
@@ -12,8 +12,7 @@
       </ion-card-title>
     </ion-card-header>
     <ion-card-content class="description">
-      Парсера для сохранения учебных кода с <a href="https://informatics.ru/"
-                                               target="_blank">сайта</a> школы программирования. Этот парсер выполняет
+      Парсер для сохранения скриптов с <a href="https://informatics.ru/" target="_blank">сайта</a> школы программирования. Он выполняет
       следующие функции:<br><br>
 
       1. Входит в аккаунт, сохраняя куки для последующих запросов.<br>

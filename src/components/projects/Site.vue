@@ -15,8 +15,7 @@
       <img alt="look_like" src="@/media/bg/look_like.png">
     </ion-card-header>
     <ion-card-content class="description">
-      Это сайт-визитка, созданная для демонстрации моих умений и проектов. Написана на Vue и Ionic, чтобы лучше изучить
-      эти технологии для разработки TMA.
+      Это сайт с открытым исходным кодом, создан для предстовления моих проектов и предсавляющий моё партфолио.
       <br>
       <br>
       <h1>Функционал:</h1>
@@ -26,8 +25,8 @@
         <li>Страница с навыками</li>
       </ul>
       <br>
-      <h2>Стек технологий: <a href="https://vuejs.org/" target="_blank">VUE</a> & <a
-          href="https://ionicframework.com/docs" target="_blank">ionic</a></h2>
+      <h1>Стек технологий: <a href="https://vuejs.org/" target="_blank">VUE</a> & <a
+          href="https://ionicframework.com/docs" target="_blank">ionic</a></h1>
     </ion-card-content>
   </ion-card>
 </template>

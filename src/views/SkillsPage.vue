@@ -9,6 +9,7 @@
       <div class="content">
         <python></python>
         <web></web>
+        <tools></tools>
       </div>
     </ion-content>
   </ion-page>
@@ -24,9 +25,11 @@ import {
 } from '@ionic/vue';
 import Python from "@/components/skills/python.vue";
 import web from "@/components/skills/web.vue";
+import Tools from "@/components/skills/tools.vue";
 
 export default {
   components: {
+    Tools,
     Python,
     web,
     IonHeader, IonToolbar, IonTitle, IonContent, IonPage
