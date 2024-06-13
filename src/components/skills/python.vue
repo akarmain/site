@@ -134,7 +134,7 @@
                     <img alt="yookassa logo" src="@/media/icons/pay.png"/>
                   </ion-avatar>
                   <div class="tech-info">
-                    <a href="https://yookassa.ru/" target="_blank">Работал с yookassa</a>
+                    <a href="https://yookassa.ru/" target="_blank">Yookassa</a>
                     <div class="project-links">
                       <a href="/projects_info/QR_bot" class="chip-link">QR bot</a>
                     </div>
