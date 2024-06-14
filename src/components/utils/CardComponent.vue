@@ -46,7 +46,7 @@ export default defineComponent({
   setup() {
     const router = useRouter();
 
-    const goToProject = (projectName: string = "None") => {
+    const goToProject = (projectName = "None") => {
       router.push({path: `/projects_info/${projectName}`});
     };
 

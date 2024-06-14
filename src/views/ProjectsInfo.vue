@@ -51,7 +51,7 @@ import {
   IonChip,
   IonLabel
 } from '@ionic/vue';
-import {IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle} from '@ionic/vue';
+import {IonButtons, IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle} from '@ionic/vue';
 import QR_bot from "@/components/projects/QR_bot.vue";
 import GPT_gft from "@/components/projects/GPT_gft.vue";
 import Edu_Helper_AI from "@/components/projects/Edu_Helper_AI.vue";
@@ -68,9 +68,11 @@ export default defineComponent({
     IonLabel, IonChip, IonIcon,
     IonHeader,
     IonToolbar,
+    IonButton,
     IonTitle,
     IonContent,
     IonPage,
+    IonButtons,
     IonBackButton,
     IonCard,
     IonCardContent,
@@ -81,7 +83,6 @@ export default defineComponent({
   setup() {
     const router = useRouter();
     const route = useRoute();
-
     const projectName = ref<string>(route.params.projectName as string);
     const isQRBot = ref<boolean>(false);
     const isGPTgft = ref<boolean>(false);
@@ -89,6 +90,7 @@ export default defineComponent({
     const isEduHelperAI = ref<boolean>(false);
     const isMini = ref<boolean>(false);
     const isNone = ref<boolean>(false);
+    console.log(route.path);
 
     onMounted(() => {
       switch (projectName.value) {
@@ -109,7 +111,6 @@ export default defineComponent({
           break;
         default:
           isNone.value = true;
-
       }
     });
 
@@ -124,7 +125,6 @@ export default defineComponent({
       isEduHelperAI,
       isSite,
       isMini,
-
       isNone,
       goBack
     };

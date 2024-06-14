@@ -32,7 +32,7 @@
                   <div class="tech-info">
                     <a href="https://www.djangoproject.com/" target="_blank">Django</a>
                     <div class="project-links">
-                      <a href="/projects_info/GPT gift" class="chip-link">GPT gift</a>
+                      <a  href="/projects_info/GPT gift" class="chip-link">GPT gift</a>
                     </div>
                   </div>
                 </div>
@@ -49,7 +49,7 @@
                   <div class="tech-info">
                     <a href="https://fastapi.tiangolo.com/" target="_blank">FastAPI</a>
                     <div class="project-links">
-                      <a href="/projects_info/QR_bot" class="chip-link">QR bot</a>
+                      <a href="/projects_info/QR bot" class="chip-link">QR bot</a>
                     </div>
                   </div>
                 </div>
@@ -83,9 +83,8 @@
                   <div class="tech-info">
                     <a href="https://docs.python.org/3/library/sqlite3.html" target="_blank">SQLite</a>
                     <div class="project-links">
-                      <a href="/projects_info/QR_bot" class="chip-link">QR bot</a>
+                      <a href="/projects_info/QR bot" class="chip-link">QR bot</a>
                       <a href="/projects_info/GPT gift" class="chip-link">GPT gift</a>
-
                     </div>
                   </div>
                 </div>
@@ -102,7 +101,8 @@
                   <div class="tech-info">
                     <a href="https://aiogram.dev" target="_blank">Aiogram 3</a>
                     <div class="project-links">
-                      <a href="/projects_info/QR_bot" class="chip-link">QR bot</a>
+                      <a href="/projects_info/QR bot" class="chip-link">QR bot</a>
+                      <a href="/projects_info/Edu Helper AI" class="chip-link">Edu Helper AI</a>
                     </div>
                   </div>
                 </div>
@@ -119,7 +119,7 @@
                   <div class="tech-info">
                     <a href="https://aiogram-dialog.readthedocs.io/en/stable/" target="_blank">Aiogram-dialog</a>
                     <div class="project-links">
-                      <a href="/projects_info/QR_bot" class="chip-link">QR bot</a>
+                      <a href="/projects_info/QR bot" class="chip-link">QR bot</a>
                     </div>
                   </div>
                 </div>
@@ -136,7 +136,7 @@
                   <div class="tech-info">
                     <a href="https://yookassa.ru/" target="_blank">Yookassa</a>
                     <div class="project-links">
-                      <a href="/projects_info/QR_bot" class="chip-link">QR bot</a>
+                      <a href="/projects_info/QR bot" class="chip-link">QR bot</a>
                     </div>
                   </div>
                 </div>
@@ -153,7 +153,7 @@
                   <div class="tech-info">
                     <a href="https://github.com/eternnoir/pyTelegramBotAPI" target="_blank">pyTelegramBotAPI</a>
                     <div class="project-links">
-                      <a href="/projects_info/QR_bot" class="chip-link">QR bot</a>
+                      <a href="/projects_info/QR bot" class="chip-link">QR bot</a>
 
                     </div>
                   </div>
@@ -171,7 +171,7 @@
                   <div class="tech-info">
                     <a href="https://python-pillow.org/" target="_blank">Pillow</a>
                     <div class="project-links">
-                      <a href="/projects_info/QR_bot" class="chip-link">QR bot</a>
+                      <a href="/projects_info/QR bot" class="chip-link">QR bot</a>
                     </div>
                   </div>
                 </div>
@@ -188,7 +188,7 @@
                   <div class="tech-info">
                     <a href="https://github.com/Delgan/loguru" target="_blank">Loguru</a>
                     <div class="project-links">
-                      <a href="/projects_info/QR_bot" class="chip-link">QR bot</a>
+                      <a href="/projects" class="chip-link">Все проекты</a>
 
                     </div>
                   </div>
@@ -216,7 +216,6 @@ import {
   IonAccordion,
   IonAccordionGroup
 } from "@ionic/vue";
-
 </script>
 
 <style scoped>

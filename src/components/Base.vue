@@ -45,7 +45,6 @@ export default {
     const route = useRoute();
 
     const isActive = (path) => {
-      console.log(route.path);
       return route.path.slice(0, 6) === path ? 'active' : '';
     };
 
