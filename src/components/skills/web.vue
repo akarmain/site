@@ -9,6 +9,14 @@ import {
   IonCardTitle, IonItem,
   IonLabel
 } from "@ionic/vue";
+
+import {GPT_gift, QR_bot, Mini, Site} from '@/components/utils/ProjectUrls';
+import {useRouter} from "vue-router";
+
+const router = useRouter();
+const goToProject = (projectName = "None") => {
+  router.push({path: `/projects_info/${projectName}`});
+};
 </script>
 
 <template>
@@ -24,7 +32,9 @@ import {
       </div>
     </ion-card-header>
     <ion-card-content class="description">
-      <ion-note class="description">В 2022 году прошел курсы от МШП, где освоил HTML, CSS и JavaScript, а также серверную разработку на Node.js. В настоящее время интересуюсь созданием Telegram Mini Apps — мини-приложений внутри Telegram, которые расширяют функциональность обычных ботов.
+      <ion-note class="description">В 2022 году прошел курсы от МШП, где освоил HTML, CSS и JavaScript, а также
+        серверную разработку на Node.js. В настоящее время интересуюсь созданием Telegram Mini Apps — мини-приложений
+        внутри Telegram, которые расширяют функциональность обычных ботов.
       </ion-note>
       <hr>
       <ion-accordion-group expand="inset">
@@ -43,9 +53,9 @@ import {
                   <div class="tech-info">
                     <a href="https://ru.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
                     <div class="project-links">
-                      <a href="/projects_info/QR bot" class="chip-link">QR bot</a>
-                      <a href="/projects_info/GPT gift" class="chip-link">GPT gift</a>
-                      <a href="/projects_info/Mini#school_akarmain" class="chip-link">My school</a>
+                      <div @click="goToProject(QR_bot)" class="chip-link">QR bot</div>
+                      <div @click="goToProject(GPT_gift)" class="chip-link">GPT gift</div>
+                      <div @click="goToProject(Mini)" class="chip-link">My school</div>
                     </div>
                   </div>
                 </div>
@@ -61,7 +71,7 @@ import {
                   <div class="tech-info">
                     <a href="https://nodejs.org/en" target="_blank">Node.js</a>
                     <div class="project-links">
-                      <a href="/projects_info/Mini#school_akarmain" class="chip-link">My school</a>
+                      <div @click="goToProject(Mini)" class="chip-link">My school</div>
                     </div>
                   </div>
                 </div>
@@ -78,7 +88,7 @@ import {
                   <div class="tech-info">
                     <a href="https://ionicframework.com/" target="_blank">Ionic</a>
                     <div class="project-links">
-                      <a href="/projects_info/Site" class="chip-link">Site</a>
+                      <div @click="goToProject(Site)" class="chip-link">Site</div>
                     </div>
                   </div>
                 </div>
@@ -95,9 +105,9 @@ import {
                   <div class="tech-info">
                     <a href="https://ru.wikipedia.org/wiki/HTML" target="_blank">HTML</a>
                     <div class="project-links">
-                      <a href="/projects_info/QR bot" class="chip-link">QR bot</a>
-                      <a href="/projects_info/GPT gift" class="chip-link">GPT gift</a>
-                      <a href="/projects_info/Mini#school_akarmain" class="chip-link">My school</a>
+                      <div @click="goToProject(QR_bot)" class="chip-link">QR bot</div>
+                      <div @click="goToProject(GPT_gift)" class="chip-link">GPT gift</div>
+                      <div @click="goToProject(Mini)" class="chip-link">My school</div>
                     </div>
                   </div>
                 </div>
@@ -114,8 +124,8 @@ import {
                   <div class="tech-info">
                     <a href="https://ru.wikipedia.org/wiki/CSS" target="_blank">CSS</a>
                     <div class="project-links">
-                      <a href="/projects_info/QR bot" class="chip-link">QR bot</a>
-                      <a href="/projects_info/GPT gift" class="chip-link">GPT gift</a>
+                      <div @click="goToProject(QR_bot)" class="chip-link">QR bot</div>
+                      <div @click="goToProject(GPT_gift)" class="chip-link">GPT gift</div>
                     </div>
                   </div>
                 </div>
@@ -132,8 +142,8 @@ import {
                   <div class="tech-info">
                     <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
                     <div class="project-links">
-                      <a href="/projects_info/GPT gift" class="chip-link">GPT gift</a>
-                      <a href="/projects_info/Mini#school_akarmain" class="chip-link">My school</a>
+                      <div @click="goToProject(GPT_gift)" class="chip-link">GPT gift</div>
+                      <div @click="goToProject(Mini)" class="chip-link">My school</div>
                     </div>
                   </div>
                 </div>

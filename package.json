@@ -28,6 +28,8 @@
   "devDependencies": {
     "@capacitor/cli": "6.0.0",
     "@types/node": "^20.12.12",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
     "@vitejs/plugin-legacy": "^5.4.1",
     "@vitejs/plugin-vue": "^4.6.2",
     "@vue/compiler-sfc": "^3.4.27",
@@ -35,7 +37,7 @@
     "@vue/runtime-dom": "^3.4.27",
     "@vue/test-utils": "^2.3.0",
     "cypress": "^13.5.0",
-    "eslint": "^8.35.0",
+    "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.9.0",
     "jsdom": "^22.1.0",
     "terser": "^5.4.0",

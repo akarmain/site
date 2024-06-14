@@ -9,6 +9,14 @@ import {
   IonCardTitle, IonItem,
   IonLabel
 } from "@ionic/vue";
+
+import {QR_bot, Edu_Helper_AI, Mini} from '@/components/utils/ProjectUrls';
+import {useRouter} from "vue-router";
+
+const router = useRouter();
+const goToProject = (projectName = "None") => {
+  router.push({path: `/projects_info/${projectName}`});
+};
 </script>
 
 <template>
@@ -91,8 +99,8 @@ import {
                   <div class="tech-info">
                     <a href="https://www.docker.com/" target="_blank">Docker</a>
                     <div class="project-links">
-                      <a href="/projects_info/QR bot" class="chip-link">QR bot</a>
-                      <a href="/projects_info/Edu Helper AI" class="chip-link">Edu Helper AI</a>
+                      <div @click="goToProject(QR_bot)" class="chip-link">QR bot</div>
+                      <div @click="goToProject(Edu_Helper_AI)" class="chip-link">Edu Helper AI</div>
                     </div>
                   </div>
                 </div>
